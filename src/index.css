@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------- RESET ---------------- */
+
+@font-face {
+	font-family: "futurama";
+	src: url("src/fonts/fr-bold.ttf");
+}
+
+header {
+	width: 100vw;
+	height: 50vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(0, 31, 51, 0.66);
+	background-blend-mode: overlay;
+	background-image: url("./assets/futurama-zapp-brannigan-scruffy.webp");
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-quiz {
+	height: 20vh;
+}
+
+.home-return {
+	text-decoration: none;
+	color: white;
+	font-family: "futurama", sans-serif;
+	font-size: 2rem;
+}
+
+h1 {
+	font-family: "futurama", sans-serif;
+	font-size: 3.2rem;
+	color: white;
+	font-weight: 700;
+	padding: 25px;
+}
+
+header p {
+	font-family: "Chewy", system-ui;
+	font-size: 1.2rem;
+	color: white;
+	font-style: italic;
+}
+
+h2 {
+	padding-top: 50px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 20px 0 20px;
+}
+
+.fry {
+	height: 200px;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 40px 0 40px 0;
+}
+
+.main-content p {
+	font-family: "Sour Gummy", sans-serif;
+	max-width: 35ch;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(0, 95, 211);
+	color: white;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+footer p {
+	font-size: 0.8rem;
+}
+
+h2 {
+	font-family: "Chewy", system-ui;
+	font-size: 2rem;
+}
+
+.bluebold {
+	color: rgb(0, 95, 211);
+	font-weight: 700;
+}
+
+main button:not(.button-quiz):not(.scroll-button) {
+	font-family: "Chewy", system-ui;
+	background-color: rgb(0, 95, 211);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+main button:hover:not(.button-quiz):not(.scroll-button) {
+	background-color: rgb(0, 206, 252);
+	transition: ease 0.5s;
+}
+
+nav {
+	margin-top: 50px;
+}
+
+nav li {
+	padding: 7px;
+	border-radius: 5px;
+}
+
+nav a {
+	font-family: "Chewy", system-ui;
+	background-color: rgb(0, 95, 211);
+	text-decoration: none;
+	color: white;
+	padding: 5px 10px;
+	margin: 0 20px;
+	border-radius: 10px;
+}
+
+nav a:hover {
+	background-color: rgb(0, 206, 252);
+	transition: ease 0.5s;
+}
+
+h2 {
+	margin-bottom: 40px;
+}
+
+h3 {
+	font-family: "Chewy", system-ui;
+	margin: 25px 0 10px 0;
+	font-size: 1.5rem;
+}
+
+.quiz-bloc {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.button-quiz {
+	font-family: "Chewy", system-ui;
+	border: none;
+	background-color: rgb(0, 95, 211);
+	border-radius: 5px;
+	color: white;
+	margin: 10px auto;
+	width: 20vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px 0;
+	cursor: pointer;
+}
+
+.selected {
+	background-color: rgb(0, 206, 252);
+	cursor: pointer;
+}
+
+.right-answer {
+	display: none;
+}
+
+.display {
+	display: block;
+}
+
+.correct {
+	background-color: green;
+}
+
+.incorrect {
+	background-color: red;
+}
+
+button.scroll-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px;
+	background-color: white;
+	color: rgb(0, 95, 211);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0 0 3px 0.5px gray;
+	width: 35px;
+	height: 35px;
+	font-size: 1.3rem;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 900px) {
+	header {
+		height: 100vh;
+	}
+
+	h1 {
+		font-size: 7rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+}
