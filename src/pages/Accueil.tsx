@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
-import FryImg from "./assets/Fry.png";
+import FryImg from "../assets/Fry.png";
 
 const Accueil = () => {
 	const navigate = useNavigate();
