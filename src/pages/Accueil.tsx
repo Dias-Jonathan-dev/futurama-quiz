@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
+import FryImg from "./assets/Fry.png";
 
 const Accueil = () => {
 	const navigate = useNavigate();
@@ -18,7 +19,7 @@ const Accueil = () => {
 			<main>
 				<h2>Futuraquiz !</h2>
 				<div className="main-content">
-					<img className="fry" src="src/assets/Fry.png" alt="fry" />
+					<img className="fry" src={FryImg} alt="fry" />
 					<p>
 						Bienvenue, nerd de l’espace ! Ce quiz est réservé aux vrais fans de
 						<span className="bluebold"> FUTURAMA !</span> Prouve que tu connais
