@@ -20,10 +20,10 @@ const Accueil = () => {
 				<div className="main-content">
 					<img className="fry" src="src/assets/Fry.png" alt="fry" />
 					<p>
-						Bienvenue sur le quiz dédié aux fans de la série
-						<span className="bluebold"> FUTURAMA !</span> Viens tester tes
-						connaissances et découvre si tu es de taille à rejoindre l'équipage
-						du <span className="bluebold">PLANET EXPRESS !</span>
+						Bienvenue, nerd de l’espace ! Ce quiz est réservé aux vrais fans de
+						<span className="bluebold"> FUTURAMA !</span> Prouve que tu connais
+						mieux la série que Bender connaît l’alcool... et gagne ta place à
+						bord du du <span className="bluebold">PLANET EXPRESS !</span>
 					</p>
 				</div>
 				<button type="button" onClick={handleClick}>
